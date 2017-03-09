@@ -6,7 +6,8 @@ function subdomain(domain, middleware) {
         let req = ctx.request;       
         let expected = domain
         let actual = req.subdomains.reverse().join('.')
-        if (actual === expected) {
+        if (actual === expected ||
+            expected.indexOf('*') !== -1) {
             return await middleware(ctx, next)
         }
         await next();
