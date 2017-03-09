@@ -15,7 +15,7 @@ function subdomain(domain, middleware) {
 }
 
 if (!module.parent) {
-    app.use(subdomain('api', async (ctx) => {
+    app.use(subdomain('*', async (ctx) => {
         ctx.body = 'hello world!'
     }));
     app.use(async (ctx) => ctx.body = 'default route');
