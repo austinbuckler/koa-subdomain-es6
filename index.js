@@ -20,3 +20,5 @@ if (!module.parent) {
     app.use(async (ctx) => ctx.body = 'default route');
     app.listen(3000, () => { console.log('listening...') });
 }
+
+module.exports = subdomain;
