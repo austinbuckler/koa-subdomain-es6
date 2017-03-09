@@ -1,0 +1,16 @@
+{
+  "name": "koa-subdomain",
+  "version": "1.0.0",
+  "description": "A really small koa middleware for managing subdomains.",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["koa", "subdomain"],
+  "author": "Austin Buckler",
+  "license": "MIT"
+}
